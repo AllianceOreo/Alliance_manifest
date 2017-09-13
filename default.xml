@@ -24,6 +24,10 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="alliance" revision="AllianceO" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="alliance" revision="AllianceO"  >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="alliance" revision="AllianceO" />
   <project path="manifest" name="manifest" remote="alliance" revision="AllianceO" />
   <project path="vendor/alliance" name="android_vendor_alliance" remote="alliance" revision="AllianceO">
@@ -32,10 +36,6 @@
   
   <!-- Aosp Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
