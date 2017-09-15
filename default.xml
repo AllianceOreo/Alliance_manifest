@@ -34,7 +34,7 @@
   <project path="vendor/alliance" name="android_vendor_alliance" remote="alliance" revision="AllianceO">
     <linkfile src="build.sh" dest="build.sh" />
   </project>
-  <project path="vendor/lge/bullhead" name="vendor_lge_bullhead" remote="alliance" revision="AllianceO" />
+  <project path="android/vendor/lge" name="android_vendor_lge" remote="alliance" revision="AllianceO" />
   
   <!-- Aosp Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
